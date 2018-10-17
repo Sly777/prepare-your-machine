@@ -2,6 +2,8 @@
 
 Helping preparation of your local env for development on First Time
 
+Are you bored to install everything manually after format your computer or buy a new one? This is the repo that helps you and avoids your fears! (I hope)
+
 **(WIP)**
 
 - Node.js
