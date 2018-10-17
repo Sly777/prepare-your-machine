@@ -1,5 +1,7 @@
 # Prepare your machine
 
+Helping preparation of your local env for development on First Time
+
 **(WIP)**
 
 - Node.js
@@ -38,20 +40,20 @@ This project is licensed under the MIT license, Copyright (c) 2018 Ilker Guller.
 
 ## Roadmap
 
-[x] Mac Support
-[x] Homebrew Support
-[x] Node.js Support
-[x] GO Support
-[x] Python Support
-[x] Java/Android Support
-[x] Crystal Support
-[x] C# Support
-[x] Ruby Support
-[ ] Windows support (WSL)
-[ ] Linux Support
-[ ] Linuxbrew Support
-[ ] Optional Installation by specific dev languages
-[ ] Confirmation before running Script (exp; asking default settings)
+- [x] Mac Support
+- [x] Homebrew Support
+- [x] Node.js Support
+- [x] GO Support
+- [x] Python Support
+- [x] Java/Android Support
+- [x] Crystal Support
+- [x] C# Support
+- [x] Ruby Support
+- [ ] Windows support (WSL)
+- [ ] Linux Support
+- [ ] Linuxbrew Support
+- [ ] Optional Installation by specific dev languages
+- [ ] Confirmation before running Script (exp; asking default settings)
 
 ## Author
 
