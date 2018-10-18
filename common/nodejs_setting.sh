@@ -5,13 +5,13 @@
 # ########################################################################################
 echo 'Setting Node.JS';
 
-# echo '- Installing NVM';
-# curl -o- https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh | bash; # NVM - node.js version manager
-# command -v nvm;
-# nvm install node;
-# nvm install $DEFAULT_NODE_VERSION;
-# nvm use $DEFAULT_NODE_VERSION;
-# nvm alias default node;
+echo '- Installing NVM';
+curl -o- https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh | bash; # NVM - node.js version manager
+command -v nvm;
+nvm install node;
+nvm install $DEFAULT_NODE_VERSION;
+nvm use $DEFAULT_NODE_VERSION;
+nvm alias default node;
 echo '- Installing NPM Check Updates';
 npm install -g npm-check-updates;
 echo '- Installing CRA';
