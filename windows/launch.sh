@@ -37,23 +37,15 @@ NVM_VERSION="v0.33.11";
 
 bash ./common/before_script.sh;
 
-mkdir ~/macApps_temp;
+bash ./windows/linuxbrew_install.sh;
 
-bash ./osx/osx_settings.sh;
+bash ./common/brew_prepare.sh
 
-bash ./osx/homebrew_install.sh;
-
-bash ./osx/xcode_install.sh;
-
-bash ./common/brew_prepare.sh;
+brew install gcc
 
 bash ./common/cliapps_install.sh;
 
-bash ./osx/zshrc_prepare.sh;
-
-bash ./common/guiapps_install.sh;
-
-bash ./osx/quicklook_plugins.sh;
+bash ./windows/zshrc_prepare.sh;
 
 bash ./osx/fonts_install.sh;
 
@@ -64,22 +56,6 @@ bash ./common/ruby_setting.sh;
 bash ./common/python_setting.sh;
 
 bash ./common/nodejs_setting.sh;
-
-# ########################################################################################
-# OTHER SETTINGS
-# ########################################################################################
-echo 'Setting Other stuff...';
-echo '- Making ZSH default';
-chsh -s $(which zsh);
-chsh -s /bin/zsh;
-# disable prompt for google drive
-echo '- Disable prompt for Google Drive';
-sudo xattr -d -r com.apple.quarantine /Applications/Google\ Drive.app;
-# disable autocorrection of mac osx
-echo '- Disable autocorrection of OSX';
-defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false;
-
-echo;
 
 bash ./common/clear_temp.sh;
 

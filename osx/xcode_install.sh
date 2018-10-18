@@ -4,7 +4,7 @@
 ### Xcode Command Line
 ### -- I tried this on OS X El Capitan 10.11
 ###
-echo "Installing XCode Command Line..."
+echo "Installing XCode Command Line...";
 sudo xcode-select -p
 RESULT=$?
 if [ $RESULT -eq 2 ]
@@ -25,4 +25,4 @@ if [ $RESULT -eq 2 ]
         echo
 fi
 
-echo
+echo;

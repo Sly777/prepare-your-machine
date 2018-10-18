@@ -3,8 +3,7 @@
 ###
 ### Cleaner
 ###
-echo 'Cleaning temp files...'
-cd ..
-rm -rf ~/macApps_temp
+echo 'Cleaning temp files...';
+rm -rf ~/macApps_temp;
 
-echo
+echo;

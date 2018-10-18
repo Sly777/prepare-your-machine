@@ -1,8 +1,10 @@
-# Prepare your machine
+# Prepare your machine (BETA)
 
 Helping preparation of your local env for development on First Time
 
 Are you bored to install everything manually after format your computer or buy a new one? This is the repo that helps you and avoids your fears! (I hope)
+
+### **It's still on BETA. Please be sure when you are trying to run this.**
 
 **(WIP)**
 
@@ -20,6 +22,8 @@ Are you bored to install everything manually after format your computer or buy a
 
 ## How to use
 
+Before starting to run installer, please change `GIT_NAME` and `GIT_EMAIL` variables on launch file. Otherwise It will prepare GIT system with wrong information.
+
 - For OSX
 
 ```bash
@@ -30,11 +34,21 @@ sh ./osx/launch.sh
 
 - For Linux
 
-**(WIP)**
+```bash
+git clone --depth=1 https://github.com/Sly777/prepare-your-machine PrepareYourMachine
+cd PrepareYourMachine
+sh ./linux/launch.sh
+```
 
 - For Windows
 
-**(WIP)**
+Before starting to use installer, Please install Ubuntu WSL for Windows. (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+```bash
+git clone --depth=1 https://github.com/Sly777/prepare-your-machine PrepareYourMachine
+cd PrepareYourMachine
+sh ./windows/launch.sh
+```
 
 ## License
 
@@ -51,9 +65,9 @@ This project is licensed under the MIT license, Copyright (c) 2018 Ilker Guller.
 - [x] Crystal Support
 - [x] C# Support
 - [x] Ruby Support
-- [ ] Windows support (WSL)
-- [ ] Linux Support
-- [ ] Linuxbrew Support
+- [x] Windows support (WSL)
+- [x] Linux Support
+- [x] Linuxbrew Support
 - [ ] Optional Installation by specific dev languages
 - [ ] Confirmation before running Script (exp; asking default settings)
 
